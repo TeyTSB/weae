@@ -19,6 +19,15 @@ local RenderStepped = RunService.RenderStepped
 local ProtectGui = protectgui or (syn and syn.protect_gui) or function() end
 
 local Themes = {
+	Names = {
+		"Dark",
+		"Light",
+		"Nord",
+		"Dracula",
+		"Monokai",
+		"Gruvbox Dark",
+		"Solarized Dark"
+	},
 	["Dark"] = {
 		Accent = Color3.fromHex("1e90ff"),
 		AcrylicMain = Color3.fromRGB(18, 18, 18),
@@ -165,10 +174,9 @@ local Themes = {
 		InputIndicator = Color3.fromHex("268BD2"),
 		Hover = Color3.fromHex("586E75"),
 		HoverChange = Color3.fromHex("93A1A1"),
-	},
-
-	-- (REPEAT similarly formatted blocks to add more up to 25+ themes)
+    }
 }
+
 
 local Library = {
 	Version = "1.1.0",
